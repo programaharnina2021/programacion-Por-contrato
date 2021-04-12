@@ -9,9 +9,13 @@ public class Circulo {
 	 */
 	public float calcularArea(float radio) {
 		//defensa
-		if (radio < 0) {
-			return -1;
-		}
+//		if (radio < 0) {
+//			return -1;
+//		}
+		//contrato
+		//definir las condiciones en que SI trabaja. Por lo tanto el resultado 
+		//del assert debe ser TRUE. si es false, peta.
+		assert(radio>=0);
 		//logica
 		return (float)(Math.PI*Math.pow(radio,2));	
 	}
